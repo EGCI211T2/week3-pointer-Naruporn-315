@@ -41,6 +41,6 @@ for (i=0; i<n; i++ ,pa++){
 }
 cout<<endl; //end line
 
-//delete []pa;
+delete []pa;
 return 0;
 }
