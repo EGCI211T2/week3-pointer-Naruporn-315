@@ -19,14 +19,14 @@ pa=pa-n; //pa[0]
 
 //print original
 cout<<"Original: ";
-for (i=0; i<n-1; i++ ,pa++){
+for (i=0; i<n; i++ ,pa++){
    cout<<setw(3)<<*pa;
 }
-cout<<setw(3)<<*pa<<endl; //print the last one
+cout<<endl; //end line
 
 // reverse
 pb = pa; //pa[n]
-pa -= (n-1); //pa[0]
+pa -= n; //pa[0]
 for (i=0; i<n/2; i++){
    temp = *pa;  
    *pa = *pb;  
@@ -34,12 +34,12 @@ for (i=0; i<n/2; i++){
    pa++;  pb--;
 }
 // print reverse
-pa -= n/2;
+pa -= (n/2)-1;
 cout<<"Reversed: ";
-for (i=0; i<n-1; i++ ,pa++){
+for (i=0; i<n; i++ ,pa++){
    cout<<setw(3)<<*pa; 
 }
-cout<<setw(3)<<*pa<<endl; //print the last one
+cout<<endl; //end line
 
 //delete []pa;
 return 0;
